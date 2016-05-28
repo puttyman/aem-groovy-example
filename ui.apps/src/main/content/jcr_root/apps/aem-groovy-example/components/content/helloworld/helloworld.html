@@ -19,3 +19,21 @@
 HelloWorldModel says:
 ${hello.message}
 </pre>
+
+<pre data-sly-use.groovyComp="im.sid.aemgroovyexample.core.presenter.GroovyExamplePresenter">
+GroovyExamplePresenter says:
+${groovyComp.stringExample}
+
+  ${groovyComp.listExample}
+
+<h3>List example</h3>
+<ul data-sly-list="${groovyComp.listExample}">
+    <li>${item}</li>
+</ul>
+
+<h3>Map example</h3>
+<dl data-sly-list="${groovyComp.mapExample}">
+    <dt>key: ${item}</dt>
+    <dd>value: ${groovyComp.mapExample[item]}</dd>
+</dl>
+</pre>

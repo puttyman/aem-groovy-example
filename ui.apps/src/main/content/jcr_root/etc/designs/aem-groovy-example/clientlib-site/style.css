@@ -34,3 +34,21 @@ a:hover {
 img {
     vertical-align: top;
 }
+
+.groovy-red {
+    color: darkred;
+}
+
+.groovy-blue {
+    color: darkblue;
+}
+
+.groovy-yellow {
+    color: yellow;
+}
+
+.groovy-green {
+    color: darkgreen;
+}
+
+

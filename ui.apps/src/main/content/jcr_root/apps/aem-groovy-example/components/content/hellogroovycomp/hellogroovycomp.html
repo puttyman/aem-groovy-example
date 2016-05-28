@@ -1,0 +1,25 @@
+<p data-sly-test="${wcmmode.edit}">Hello Groovy Component</p>
+<sly data-sly-use.helloGroovyComp="${ 'im.sid.aemgroovyexample.core.presenter.GroovyExamplePresenter'}"
+     data-sly-test="${helloGroovyComp}">
+
+  <h2 data-sly-test="${helloGroovyComp.heading}"
+      data-sly-attribute.class="${helloGroovyComp.headingColor}">
+    ${helloGroovyComp.heading}
+  </h2>
+
+  ${helloGroovyComp.CSS_CLASS_NAME_MAP}
+
+  <h3>String Example</h3>
+  ${helloGroovyComp.stringExample}
+
+  <h3>List example</h3>
+  <ul data-sly-list="${helloGroovyComp.listExample}">
+    <li>${item}</li>
+  </ul>
+
+  <h3>Map example</h3>
+  <dl data-sly-list="${helloGroovyComp.mapExample}">
+    <dt>key: ${item}</dt>
+    <dd>value: ${groovyComp.mapExample[item]}</dd>
+  </dl>
+</sly>
